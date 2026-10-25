@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Sederhana - Kontak</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS tambahan khusus Form Kontak agar rapi */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input, 
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        .btn-submit {
+            background-color: #337ab7;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn-submit:hover {
+            background-color: #23527c;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>JUAL BELI MONYET</h1>
+        </header>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#" class="disabled">Artikel</a>
+            <a href="about.html">About</a>
+            <a href="kontak.html" class="active">Kontak</a>
+        </nav>
+
+        <section id="hero">
+            <h1>Hubungi Kami</h1>
+            <p>Punya pertanyaan seputar stok atau ingin konsultasi? Kirimkan pesanmu melalui formulir di bawah ini!</p>
+        </section>
+
+        <section id="wrapper" style="display: block; padding: 30px;">
+            <div class="contact-form">
+                <h2>Formulir Pesan</h2>
+                <p style="margin-bottom: 20px; color: #666;">Silakan isi data diri dan pesan Anda dengan lengkap.</p>
+                
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap:</label>
+                        <input type="text" id="nama" name="nama" placeholder="Masukkan nama kamu..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Pesan / Konsultasi:</label>
+                        <textarea id="message" name="message" placeholder="Tuliskan pesan atau jenis monyet yang dicari..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Kirim Pesan</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 - Universitas Pelita Bangsa</p>
+        </footer>
+    </div>
+</body>
+</html>
